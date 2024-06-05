@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #ebffff;
+}
+
+/* signup modal */
+input[type=text],input[type= email],input[type= password],input[type= tel] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.invoice{
+    background: white;
+}
+
+.modal-content{
+    background: linear-gradient(45deg, #12c8c8,#083d3d);
+}
+
+#signup .modal-content{
+    background: white;
+}
+
+.Login-Modal .row{
+    justify-content: center;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 30%;
+}
+
+.submit-button{
+    justify-content: center;
+}
+
+input[type=submit]:hover {
+    background-color: #d13985;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/* ---details-navbar------ */
+.details-navbar {
+    background: linear-gradient(to top,#006666 10%, #00ffff );
+}
+
+.detail{
+    padding: 13px;
+    color: black;
+    text-align: center;
+}
+
+.details-navbar a {
+    padding: 13px;
+    color: black;
+}
+
+/*--------------- search bar ---------*/
+.first-nav .btn button{
+    background: none;
+    border: none;
+}
+
+.first-nav .btn{
+    display: flex;
+    justify-content: end;
+}
+
+header{
+    background: white;
+}
+
+.search-bar , .navigation-bar{
+    border-bottom-style: solid;
+    border-bottom-color: #015454;
+    border-width: 2px;
+}
+.search{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.search-bar img, .heading img{
+    width: 122px;
+    height: 66px;
+}
+.search form input{
+    width: 30rem;
+    padding-left: 1rem;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+}
+.search form button{
+    border-radius: 0.5rem;
+    border: 2px solid black;
+    margin-left: 3px;
+    background: rgb(190, 124, 37);
+}
+
+/* ----------navigation-bar ------------*/
+.shopping-icons a , .account-icon a{
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #004b4b;
+}
+.sub-dropdown-menu{
+    display: none;
+}
+
+.sub-dropdown:hover  .sub-dropdown-menu{
+    display: block;
+}
+.sub-dropdown-menu{
+    margin-left: 203px;
+    margin-top: -26px;
+}
+
+.dropdown:hover .dropdown-menu {
+    transition: all 0.5s ease-in-out;
+}
+
+/*carousal*/ 
+.carousel-item img{
+    height: 490px;
+}
+/*---------- advertisements ------------*/
+.advertisements img, .top-category .card{
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.advertisements img:hover,.top-category .card:hover{
+    transform: scale(1.05);
+    box-shadow: 1rem 1.5rem 1rem -0.9rem rgb(12, 38, 49);
+    /* transform: translateY(-1rem); */
+}
+
+/*------------ top category ------------*/
+.top-category .card{
+    height: 100%;
+    width: 100%;
+}
+
+.top-category img{
+    height: 80%;
+    width: 100%;
+}
+
+/*------------ featured products ------------*/
+.feature-products .card{
+    height: 100%;
+    width: 100%;
+}
+
+.main-price{
+    margin: 0rem;
+    padding: 0;
+}
+
+.save p{
+    background: rgb(219, 34, 34);
+    color: white;
+}
+
+.previous-price{
+    color: grey;
+}
+
+/*---------- online learning introduction ----------*/
+.content p{
+    text-align: justify;
+}
+
+/*--------------------- footer ---------------------*/
+footer{
+    background:  linear-gradient(to bottom,#006666 10%, #00f0f0 );
+    position: absolute;
+    width: 100%;
+}
+
+.social-icons a {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-instagram {
+    background-image: conic-gradient(blue,#fc036f,yellow,red,purple , blue);
+    color: white;
+}
+
+.copyright{
+    padding: 3px;
+    background: #015454;
+    color: white;
+}
+
+/*------------------FAQ's'-------------------------*/
+.accordion .accordion-item{
+    border: 1px solid deepskyblue;
+}
+
+/*------------------Forget Password-------------------------*/
+.forget-body{
+    display: grid;
+    place-content: center;
+}
+
+/*------------------Products-------------------------*/
+.grid-container{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+}
+
+.card-footer{
+    margin: 0px;
+    padding: 0px;
+    height: 55px;
+}
+
+.card-footer .col-6 {
+    padding: 0px;
+    text-align: center;
+}
+
+.card-footer .btn{
+    padding-top: 14px;
+    width: 100%;
+    padding-bottom: 14px;
+}
+
+.card-footer{
+    background: #00a9a9;
+}
+
+.card-footer .col-6:hover {
+    background: linear-gradient(45deg, #215f74,black);
+    color: white;
+}
+
+.card-footer .btn:hover {
+    color: white;
+}
+
+/*---------view more----------*/
+.descrition .title{
+    width: 70%;
+}
+
+.more .previous-price, .more .main-price{
+    letter-spacing: 1.1px;
+    font-weight: 500;
+    padding: 5px 5px 5px 0px;
+}
+
+.more .main-price{
+    color: #ea1b1b;
+}
+
+.feature{
+    color: #017801;
+    font-size: 19px;
+}
+
+.more .btn{
+    padding-top: 14px;
+    width: 100%;
+    padding-bottom: 14px;
+    background: linear-gradient(45deg, #215f74,black);
+    color: white;
+}
+/*---------sidenav ---------*/
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    background: linear-gradient(192deg, #007777, transparent);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 15px 0px 0px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {width: 0px;
+              padding: 15px 0px 0px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*-----------CART------------*/
+.descrition .cart-item{
+    background: #c1e8e8;
+}
+
+.total{
+    padding-top: 14px;
+    width: 100%;
+    padding-bottom: 14px;
+    background: linear-gradient( 45deg, #215f74,black);
+    color: white;
+}
+
+.total .col-6 ,.total .col-6 a{
+    text-align: center;
+    color: white
+}
+
+/*----------------payment-------------*/
+.heading{
+    background: linear-gradient(to top,#006666 10%, #00ffff );
+}
+
+.heading .title{
+    padding: 6px;
+    color: black;
+    text-align: center;
+}
+
+.pay-method , .pay-cred{
+    background: white;
+}
+
+.pay-method{
+    padding: 10px 10px 10px 0px;
+
+}
+.pay-method p{
+    font-size: 20px;
+    font-weight: 500;
+}
+#credit-debit{
+    padding: 10px 20px 20px 20px;
+    margin-left: 140px;
+}
+.icon{
+    font-size: 40px;
+    color: #d5d5d5;
+}
+
+#credit-debit input[type=submit]{
+    width: 80%;
+    margin-left: -2px;
+}
+
+/*----------------shipping address --------------------*/
+.address{
+    background: white;
+    margin-left: 350px;
+}
+
+.address .col-4 label{
+    width: 100%;
+}
+.address .col-8 input{
+    width: 80%;
+}
+
+/*--------------my orders---------*/
+.myOrder .items input[type=submit]{
+    float: none;
+    width: 100%;
+}
+
+.return{
+    margin-right: 0px;
+}
+/*--------------my orders---------*/
+.bill input[type=button],.receipt input[type=button],.profile input[type=button], .profile button{
+    width: 12%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 40px;
+    background: #28ceff;
+    border: 2px solid #002f80;
+    font-size: larger;
+    color: black;
+    font-weight: 700;
+}
+.receipt input[type=button]{
+    margin-left: 45%;
+}
+.invoice hr{
+    color: black;
+    height: 2px;
+}
+/*box shadow*/ 
+.list .card{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(11 84 146 / 30%);
+}
+
+#cat , #sdate, #purp, #addr{
+    width: 60%;
+    height: 50px;
+    border-radius: 40px;
+}
+
+.more img{
+    height: 40rem;
+}
